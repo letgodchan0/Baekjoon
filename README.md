@@ -1,7 +1,8 @@
 ## [백준](https://www.acmicpc.net/problemset)
 
-| 문제번호          | 내가 푼 방법                                                 | 백준 링크                                    | 비고 | 설명 |
-| ----------------- | :----------------------------------------------------------- | -------------------------------------------- | ---- | ---- |
-| 1259 - 팰린드롬수 | [풀이](https://github.com/letgodchan0/Baekjoon/blob/master/solution/1259%EB%B2%88_%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC%EC%88%98.py) | [문제](https://www.acmicpc.net/problem/1259) |      |      |
-|                   |                                                              |                                              |      |      |
-|                   |                                                              |                                              |      |      |
+| 문제번호                    | 내가 푼 방법                                                 | 백준 링크                                    | 비고 | 설명                                                         |
+| --------------------------- | :----------------------------------------------------------- | -------------------------------------------- | ---- | ------------------------------------------------------------ |
+| 1018번 - 체스판 다시 칠하기 | [풀이](https://github.com/letgodchan0/Baekjoon/blob/master/solution/1018%EB%B2%88_%EC%B2%B4%EC%8A%A4%ED%8C%90%EB%8B%A4%EC%8B%9C%EC%B9%A0%ED%95%98%EA%B8%B0.py) | [문제](https://www.acmicpc.net/problem/1018) |      | [설명](https://velog.io/@letgodchan0/%EB%B0%B1%EC%A4%80-1018%EB%B2%88-%EC%B2%B4%EC%8A%A4%ED%8C%90-%EB%8B%A4%EC%8B%9C-%EC%B9%A0%ED%95%98%EA%B8%B0) |
+| 1259번 - 팰린드롬수         | [풀이](https://github.com/letgodchan0/Baekjoon/blob/master/solution/1259%EB%B2%88_%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC%EC%88%98.py) | [문제](https://www.acmicpc.net/problem/1259) |      |                                                              |
+|                             |                                                              |                                              |      |                                                              |
+|                             |                                                              |                                              |      |                                                              |
