@@ -1,19 +1,29 @@
-from sys import stdin
+def empty():
+    print(0) if stack else print(1)
 
+def size():
+    print(len(stack))
+def top():
+    print(stack[-1]) if stack else print(-1)
+def push(item):
+    stack.append(item)
+    
+def pop():
+    print(stack.pop(-1)) if stack else print(-1)
+
+import sys
+n = int(input())
 stack = []
-next(stdin)
-for line in stdin:
-    command = line.split()
-    if command[0] == 'push':
-        stack.append(command[1])
-    elif command[0] == 'pop':
-        if stack: print(stack.pop())
-        else: print(-1)
-    elif command[0] == 'size':
-        print(len(stack))
-    elif command[0] == 'empty':
-        if stack: print(0)
-        else: print(1)
-    elif command[0] == 'top':
-        if stack: print(stack[-1])
-        else: print(-1)
+for _ in range(n):
+    order = sys.stdin.readline().strip('\n').split()
+    if order[0] == 'push':
+        push(order[1])
+    elif order[0] == 'pop':
+        pop()
+    elif order[0] == 'top':
+        top()
+    elif order[0] == 'size':
+        size()
+    else:
+        empty()
+ 
