@@ -10,3 +10,6 @@ for i in number:
         break
     cnt += 1
 print(cnt)
+
+# 더 효율적인 방법
+n=int(input());print(n//125+n//25+n//5)
