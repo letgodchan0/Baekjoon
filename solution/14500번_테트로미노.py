@@ -16,14 +16,13 @@ def dfs(i, j, cnt, total):
                     visited[ni][nj] = 0
                 visited[ni][nj] = 1
                 dfs(ni, nj, cnt+1, total+arr[ni][nj])
-                visited[ni][nj] = 1
+                visited[ni][nj] = 0
 
 n, m = map(int, input().split())
 arr = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
 
 result = 0
 max_value = max(map(max, arr))
-print(max_value)
 visited = [[0]*m for _ in range(n)]
 for i in range(n):
     for j in range(m):
