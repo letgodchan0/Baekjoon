@@ -1,20 +1,17 @@
 import sys
-input = sys.stdin.readline
+n, m = map(int, sys.stdin.readline().split())
+arr = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
+numbers = [list(map(int, sys.stdin.readline().split())) for _ in range(m)]
+lst = [0] * (n*n+1)
 
+for i in range(n):
+    for j in range(n):
+        lst[i*n + j + 1] = lst[i*n + j] + arr[i][j]
 
-N, M = map(int, input().split())
-arr = [list(map(int, input().split())) for _ in range(N)]
-dp = [[0] * (N+1) for _ in range(N+1)]
+for num in numbers:
+    x1, y1, x2, y2 = num
+    tmp = 0
+    for i in range(x1-1,x2):
+        tmp += lst[i*n+y2] - lst[i*n+y2-(y2-y1+1)]
 
-for i in range(N):
-    for j in range(N):
-        dp[i+1][j+1] = dp[i][j+1] + dp[i+1][j] - dp[i][j] + arr[i][j]
-
-for _ in range(M):
-    
-    s_row, s_col, e_row, e_col = map(int, input().split())
-    
-    base = dp[e_row][e_col]
-    delta = dp[s_row-1][e_col] + dp[e_row][s_col-1] - dp[s_row-1][s_col-1]
-    
-    print(base - delta)
+    print(tmp)
