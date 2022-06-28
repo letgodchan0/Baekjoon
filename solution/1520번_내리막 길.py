@@ -22,5 +22,3 @@ n, m = map(int, input().split())
 arr = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
 dp = [[-1] * m for _ in range(n)]
 print(dfs(0,0))
-for i in dp:
-    print(i)
