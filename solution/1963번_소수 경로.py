@@ -31,7 +31,6 @@ def bfs(start):
         for add in lst:
             prime_number = current + add
             if 1000 <= prime_number < 10000 and not visited[prime_number-1000] and isPrime(prime_number) and check(current, prime_number):
-                # print(prime_number)
                 q.append((prime_number, cnt + 1))
                 visited[prime_number-1000] = 1
 
