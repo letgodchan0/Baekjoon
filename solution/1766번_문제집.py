@@ -8,7 +8,6 @@ for _ in range(m):
     outdegree[a].append(b)
     indegree[b] += 1
 
-order = []
 heap = []
 for i in range(1, n+1):
     if not indegree[i]:
