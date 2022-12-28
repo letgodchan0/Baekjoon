@@ -1,15 +1,17 @@
-import sys
-S=list(input())
-T=list(input())
-def dfs(t): 
-    if t==S:
-        print(1)
-        sys.exit()
-    if len(t)==0:
-        return 0
-    if t[-1]=='A':  
-        dfs(t[:-1]) 
-    if t[0]=='B':
-        dfs(t[1:][::-1]) 
-dfs(T)
-print(0)
+def dfs(t):
+    global check
+
+    if s == t:check = True
+    if len(t) == 0:
+        return
+
+    if t[-1] == 'A':
+        dfs(t[:-1])
+    if t[0] == 'B':
+        dfs(t[1:][::-1])
+
+s = input(); t = input()
+check = False
+
+dfs(t)
+print(1 if check else 0)
